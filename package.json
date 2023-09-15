@@ -1,0 +1,29 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddollar00/apiTest.git"
+  },
+  "author": "damion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddollar00/apiTest/issues"
+  },
+  "homepage": "https://github.com/ddollar00/apiTest#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "coverage": true
+  },
+  "dependencies": {
+    "winston": "^3.10.0"
+  }
+}

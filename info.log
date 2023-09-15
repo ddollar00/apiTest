@@ -1,0 +1,150 @@
+2023-09-15T17:21:38.446Z [info]:  Get []
+2023-09-15T17:21:38.463Z [info]:  Get []
+2023-09-15T17:21:38.575Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:24:36.274Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:24:36.300Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:24:36.409Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:25:57.887Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:25:57.906Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:25:58.194Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:30:43.500Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:30:43.515Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:30:43.591Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:35:31.682Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:35:31.698Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:35:31.790Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:36:51.379Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:36:51.442Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:36:51.553Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:39:18.202Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:39:18.215Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false},{"name":"milk","quantity":1,"price":2.99,"purchased":false}]
+2023-09-15T17:39:18.294Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"purchased":false}
+2023-09-15T17:39:18.323Z [error]: Edit index does not exist
+2023-09-15T17:40:45.304Z [info]:  Get []
+2023-09-15T17:40:45.317Z [info]:  Get []
+2023-09-15T17:40:45.393Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T17:40:45.419Z [error]: Edit index does not exist
+2023-09-15T17:45:09.936Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:45:10.092Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:45:10.569Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T17:45:10.596Z [error]: Edit index does not exist
+2023-09-15T17:51:44.816Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:51:44.833Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:51:44.993Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T17:51:45.036Z [error]: Edit index does not exist
+2023-09-15T17:53:43.625Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:53:43.638Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:53:43.717Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T17:53:43.736Z [error]: Edit ID not found: [object Object]
+2023-09-15T17:53:43.775Z [error]: Edit ID not found: [object Object]
+2023-09-15T17:59:53.501Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:59:53.513Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T17:59:53.606Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T17:59:53.632Z [error]: Edit ID not found: [object Object]
+2023-09-15T17:59:53.722Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:02:44.112Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:02:44.124Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:02:44.270Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:02:44.511Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:02:44.603Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:04:16.356Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:04:16.379Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:04:16.502Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:04:16.532Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:04:16.575Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:05:27.565Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:05:27.613Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:05:27.837Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:05:27.858Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:05:27.918Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:06:39.896Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:06:39.912Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:06:40.073Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:06:40.120Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:06:40.160Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:10:27.873Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:10:27.891Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:10:28.028Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:10:28.053Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:10:28.097Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:13:14.027Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:13:14.042Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:13:14.182Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:13:14.206Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:13:14.260Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:14:15.589Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:14:15.609Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:14:15.723Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:14:15.753Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:14:15.790Z [error]: Edit ID not found: [object Object]
+2023-09-15T18:16:19.285Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:16:19.301Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:16:19.427Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:16:19.448Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:16:19.454Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:16:19.485Z [error]: Edit ID not found: 999
+2023-09-15T18:18:42.390Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:18:42.469Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:18:42.577Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:18:42.606Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:18:42.612Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:18:42.656Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:20:15.410Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:20:15.423Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:20:15.564Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:20:15.586Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:20:15.591Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:20:15.671Z [error]: Edit ID not found: 999
+2023-09-15T18:21:23.785Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:21:23.804Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:21:23.952Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:21:23.992Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:21:23.999Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:21:24.007Z [error]: Edit ID not found: 999
+2023-09-15T18:24:38.526Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:24:38.545Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:24:38.747Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:24:38.773Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:24:38.777Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:24:38.783Z [error]: Edit ID not found: 999
+2023-09-15T18:26:33.835Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:26:33.847Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:26:33.959Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:26:33.982Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:26:33.987Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:26:33.998Z [error]: Edit ID not found: 999
+2023-09-15T18:30:50.799Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:30:50.816Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:30:50.985Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:30:51.013Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:30:51.016Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:30:51.024Z [error]: Edit ID not found: 999
+2023-09-15T18:30:51.047Z [info]: DELETE: [{"name":"milk","quantity":1,"price":2.99,"bought":true}]
+2023-09-15T18:31:51.412Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:31:51.424Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:31:51.533Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:31:51.569Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:31:51.576Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:31:51.626Z [error]: Edit ID not found: 999
+2023-09-15T18:31:51.648Z [info]: DELETE: [{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:32:19.287Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:32:19.306Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:32:19.410Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:32:19.445Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:32:19.452Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:32:19.461Z [error]: Edit ID not found: 999
+2023-09-15T18:32:19.484Z [info]: DELETE: [{"name":"milk","quantity":1,"price":2.99,"bought":true}]
+2023-09-15T18:40:16.033Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:40:16.052Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:40:16.143Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:40:16.173Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:40:16.178Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:40:16.190Z [error]: Edit ID not found: 999
+2023-09-15T18:40:16.202Z [info]: DELETE: [{"name":"milk","quantity":1,"price":2.99,"bought":true}]
+2023-09-15T18:42:45.771Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:42:45.788Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:42:45.881Z [info]:  ADD {"name":"milk","quantity":1,"price":2.99,"bought":false}
+2023-09-15T18:42:45.910Z [info]: Edit: {"name":"milk","quantity":1,"price":2.99,"bought":true}
+2023-09-15T18:42:45.916Z [info]:  Get [{"name":"milk","quantity":1,"price":2.99,"bought":true},{"name":"milk","quantity":1,"price":2.99,"bought":false},{"name":"milk","quantity":1,"price":2.99,"bought":false}]
+2023-09-15T18:42:45.951Z [error]: Edit ID not found: 999
+2023-09-15T18:42:45.965Z [info]: DELETE: [{"name":"milk","quantity":1,"price":2.99,"bought":true}]
