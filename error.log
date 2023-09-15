@@ -30,3 +30,18 @@
 2023-09-15T18:32:19.461Z [error]: Edit ID not found: 999
 2023-09-15T18:40:16.190Z [error]: Edit ID not found: 999
 2023-09-15T18:42:45.951Z [error]: Edit ID not found: 999
+2023-09-15T20:21:06.540Z [error]: Invalid request data: 
+2023-09-15T20:21:06.555Z [error]: Invalid request data: 
+2023-09-15T20:21:06.562Z [error]: DELETE: Invalid request data: 
+2023-09-15T20:21:06.570Z [error]: DELETE: Invalid request data: 
+2023-09-15T20:27:43.726Z [error]: Edit ID not found: undefined
+2023-09-15T20:27:43.765Z [error]: Edit ID not found: null
+2023-09-15T20:27:43.778Z [error]: DELETE: Invalid index: NaN
+2023-09-15T20:30:37.802Z [error]: Edit ID not found: null
+2023-09-15T20:30:37.814Z [error]: DELETE: Invalid index: NaN
+2023-09-15T20:32:05.731Z [error]: Edit ID not found: null
+2023-09-15T20:32:31.123Z [error]: Edit ID not found: null
+2023-09-15T20:36:50.531Z [error]: Edit ID not found: null
+2023-09-15T20:42:12.407Z [error]: Edit ID not found: null
+2023-09-15T20:43:23.703Z [error]: Edit ID not found: null
+2023-09-15T21:05:18.716Z [error]: Edit ID not found: null

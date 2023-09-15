@@ -1,149 +1,152 @@
-// HTTP Methods
 const http = require("http");
-const url = require('url');
-const PORT = 3000;
-const { createLogger, transports, format } = require('winston');
+const winston = require("winston");
+const url = require("url");
+const querystring = require("querystring");
 
+const groceryItems = [];
 
-// create the logger
-const logger = createLogger({
-    level: 'info', // this will log only messages with the level 'info' and above
-    format: format.combine(
-        format.timestamp(),
-        format.printf(({ timestamp, level, message }) => {
-            return `${timestamp} [${level}]: ${message}`;
-        })
-    ),
-    transports: [
-        new transports.Console(), // log to the console
-        new transports.File({ filename: 'info.log', level: 'info' }),
-        new transports.File({ filename: 'error.log', level: 'error' })
-    ]
-});
-const groc = [];
-const newItem = {
-    name: "milk",
-    quantity: 1,
-    price: 2.99,
-    bought: false,
-}
-groc.push(newItem);
-groc.push(newItem);
-const server = http.createServer((req, res) => {
-
-    // GET
-
-    if (req.method === 'GET' && req.url === '/api/data') {
-
-        get(res);
-        //POST
-    } else if (req.method === 'POST' && req.url === '/api/add') {
-
-        post(req, res);
-    }
-
-    else if (req.method === "PUT" && req.url === '/api/edit') {
-
-        put(req, res);
-    }
-
-    else if (req.method === "DELETE" && req.url === '/api/remove') {
-
-        deleteItem(req, res);
-    } else {
-        res.writeHead(404, { 'Content-Type': 'text/plain' });
-        res.end('Not Found');
-    }
-
+const logger = winston.createLogger({
+    transports: [new winston.transports.Console()],
 });
 
-server.listen(PORT, () => {
-    console.log(`Server is listening on http://localhost:${PORT}`);
-});
+const PORT = process.env.PORT || 3000;
+let server; // Declare a variable to hold the server instance
 
-function get(res) {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
+// Create the HTTP server
+server = http.createServer((request, response) => {
+    try {
+        const { headers, method } = request;
 
-    res.end(JSON.stringify(groc));
-    logger.info(" Get " + JSON.stringify(groc));
+        // Log incoming request
+        logger.info(`${method} request send to endpoint ${request.url}`);
+
+        // Parse the body
+        let body = [];
+        request
+            .on("error", (err) => {
+                throw new Error(err.message);
+            })
+            .on("data", (chunk) => {
+                body.push(chunk);
+            })
+            .on("end", () => {
+                body = Buffer.concat(body).toString();
+
+                // GET
+                // Returns all grocery list items
+                if (method === "GET" && request.url === "/api/groceries") {
+                    response.writeHead(200, {
+                        "Content-Type": "application/json",
+                    });
+                    response.end(JSON.stringify(get()));
+                }
+
+                // POST
+                // Creates a new grocery list item
+                if (method === "POST" && request.url === "/api/groceries") {
+                    let item = JSON.parse(body);
+
+                    response.writeHead(201, {
+                        "Content-Type": "application/json",
+                    });
+                    response.end(JSON.stringify(post(item)));
+
+                    logger.info("New grocery item added.");
+                }
+
+                // PUT
+                // Update a grocery list item
+                if (method === "PUT") {
+                    const parsed = url.parse(request.url);
+                    const query = querystring.parse(parsed.query);
+
+                    let updatedItem = put(query.name);
+
+                    response.writeHead(201, {
+                        "Content-Type": "application/json",
+                    });
+                    response.end(
+                        JSON.stringify({ message: "Successfully updated grocery list item", item: updatedItem })
+                    );
+
+                    logger.info("Successfully updated item.");
+                }
+
+                // DELETE
+                // Remove an item from the grocery list
+                if (method === "DELETE") {
+                    const parsed = url.parse(request.url);
+                    const query = querystring.parse(parsed.query);
+
+                    let deletedItem = deleteItems(query.name);
+
+                    response.writeHead(201, {
+                        "Content-Type": "application/json",
+                    });
+                    response.end(
+                        JSON.stringify({ message: "Successfully deleted grocery item", item: deletedItem })
+                    );
+
+                    logger.info("Successfully deleted item.");
+                }
+            });
+    } catch (error) {
+        logger.error(error.message);
+        response.writeHead(400, {
+            "Content-Type": "application/json",
+        });
+        response.end(JSON.stringify({ message: "Bad Request" }));
+    }
+})
+    .listen(PORT, () => {
+        logger.info(
+            `Server started listening for requests at http://localhost:${PORT}`
+        );
+    });
+
+function get() {
+    return groceryItems;
 }
-function post(req, res) {
-    let body = '';
-    req.on('data', (chunk) => {
-        body += chunk;
-    });
-    req.on('end', () => {
 
-        const item = JSON.parse(body);
-        groc.push(item);
-        logger.info(" ADD " + JSON.stringify(item));
-        res.writeHead(201, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ message: 'item added Successfully!' }));
-
-    });
+function post(item) {
+    groceryItems.push(item);
+    return { message: "New item added successfully", item: item };
 }
-function put(req, res) {
-    let body = '';
-    req.on('data', (chunk) => {
-        body += chunk;
-    });
-    req.on('end', () => {
-        try {
-            const data = JSON.parse(body);
-            const index = Number(data.index);
 
-            if (isNaN(index) || index < 1 || index > groc.length) {
-                // Invalid index
-                res.writeHead(404, { 'Content-Type': 'text/plain' });
-                res.end('Item not found');
-                logger.error("Edit ID not found: " + data.index);
-            } else {
-                const updatedItem = groc[index - 1];
-                updatedItem.bought = !updatedItem.bought;
-
-                res.writeHead(200, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ message: 'Item bought status changed!' }));
-                logger.info("Edit: " + JSON.stringify(updatedItem));
-            }
-        } catch (error) {
-            res.writeHead(400, { 'Content-Type': 'text/plain' });
-            res.end('Invalid request data');
-            logger.error("Invalid request data: " + body);
+function put(name) {
+    let item = null;
+    for (let i = 0; i < groceryItems.length; i++) {
+        if (groceryItems[i].name === name) {
+            item = groceryItems[i];
+            item.purchased = true;
+            groceryItems.splice(i, 1, item);
         }
-    });
+    }
+
+    return item;
 }
 
-
-function deleteItem(req, res) {
-    let body = '';
-    req.on('data', (chunk) => {
-        body += chunk;
-    });
-    req.on('end', () => {
-        try {
-            const data = JSON.parse(body);
-            const index = Number(data.index);
-
-            if (isNaN(index) || index < 1 || index > groc.length) {
-                // Invalid index
-                res.writeHead(404, { 'Content-Type': 'text/plain' });
-                res.end('Item not found');
-                logger.error("DELETE: Invalid index: " + index);
-            } else {
-                // Remove the item at the specified index
-                const deletedItem = groc.splice(index - 1, 1);
-
-                res.writeHead(200, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ message: 'Item has been deleted!', deletedItem }));
-                logger.info("DELETE: " + JSON.stringify(deletedItem));
-            }
-        } catch (error) {
-            res.writeHead(400, { 'Content-Type': 'text/plain' });
-            res.end('Invalid request data');
-            logger.error("DELETE: Invalid request data: " + body);
+function deleteItems(name) {
+    let item = null;
+    for (let i = 0; i < groceryItems.length; i++) {
+        if (groceryItems[i].name === name) {
+            item = groceryItems[i];
+            groceryItems.splice(i, 1);
         }
-    });
+    }
+
+    return item;
 }
 
+function closeServer() {
+    server.close(); // Close the server gracefully
+}
 
-module.exports = server;
+module.exports = {
+    groceryItems,
+    get,
+    post,
+    put,
+    deleteItems,
+    closeServer, // Export the closeServer function
+};
